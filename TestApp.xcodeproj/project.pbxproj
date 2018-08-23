@@ -14,6 +14,9 @@
 		DA390C83212EFE37007FEDE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA390C81212EFE37007FEDE9 /* LaunchScreen.storyboard */; };
 		DA390C8E212EFE37007FEDE9 /* TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA390C8D212EFE37007FEDE9 /* TestAppTests.swift */; };
 		DA390C99212EFE37007FEDE9 /* TestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA390C98212EFE37007FEDE9 /* TestAppUITests.swift */; };
+		DA390CA9212EFEA6007FEDE9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA390CA8212EFEA6007FEDE9 /* HomeViewController.swift */; };
+		DA390CAC212EFEDB007FEDE9 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA390CAB212EFEDB007FEDE9 /* CustomTableViewCell.swift */; };
+		DA390CAE212EFF18007FEDE9 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA390CAD212EFF18007FEDE9 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		DA390C94212EFE37007FEDE9 /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA390C98212EFE37007FEDE9 /* TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITests.swift; sourceTree = "<group>"; };
 		DA390C9A212EFE37007FEDE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA390CA8212EFEA6007FEDE9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DA390CAB212EFEDB007FEDE9 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		DA390CAD212EFF18007FEDE9 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				DA390C78212EFE36007FEDE9 /* AppDelegate.swift */,
-				DA390C7A212EFE36007FEDE9 /* ViewController.swift */,
-				DA390C7C212EFE36007FEDE9 /* Main.storyboard */,
+				DA390CA7212EFE70007FEDE9 /* ViewControllers */,
+				DA390CAA212EFEBD007FEDE9 /* TableViewCells */,
+				DA390CA6212EFE46007FEDE9 /* Storyboards */,
+				DA390CAF212EFF2A007FEDE9 /* Extensions */,
 				DA390C7F212EFE37007FEDE9 /* Assets.xcassets */,
-				DA390C81212EFE37007FEDE9 /* LaunchScreen.storyboard */,
 				DA390C84212EFE37007FEDE9 /* Info.plist */,
 			);
 			path = TestApp;
@@ -123,6 +130,40 @@
 				DA390C9A212EFE37007FEDE9 /* Info.plist */,
 			);
 			path = TestAppUITests;
+			sourceTree = "<group>";
+		};
+		DA390CA6212EFE46007FEDE9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DA390C7C212EFE36007FEDE9 /* Main.storyboard */,
+				DA390C81212EFE37007FEDE9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DA390CA7212EFE70007FEDE9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA390C7A212EFE36007FEDE9 /* ViewController.swift */,
+				DA390CA8212EFEA6007FEDE9 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DA390CAA212EFEBD007FEDE9 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				DA390CAB212EFEDB007FEDE9 /* CustomTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		DA390CAF212EFF2A007FEDE9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA390CAD212EFF18007FEDE9 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA390CAE212EFF18007FEDE9 /* UIImageView+Extension.swift in Sources */,
 				DA390C7B212EFE36007FEDE9 /* ViewController.swift in Sources */,
 				DA390C79212EFE36007FEDE9 /* AppDelegate.swift in Sources */,
+				DA390CAC212EFEDB007FEDE9 /* CustomTableViewCell.swift in Sources */,
+				DA390CA9212EFEA6007FEDE9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
