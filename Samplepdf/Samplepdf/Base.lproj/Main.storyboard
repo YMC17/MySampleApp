@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="iy3-rC-ZYb">
+            <objects>
+                <viewController id="mZW-7h-B1b" customClass="ViewController" customModule="PDFKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GKL-lr-cjo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hY3-2x-PWw" customClass="PDFView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlN-yu-6lh">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.85783670680000002" blue="0.091744234780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LMh-vF-f8o"/>
+                                </constraints>
+                                <state key="normal" title="Save "/>
+                                <connections>
+                                    <action selector="sharePDF:" destination="mZW-7h-B1b" eventType="touchUpInside" id="Qb6-Bp-dW8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hY3-2x-PWw" firstAttribute="trailing" secondItem="6yh-yU-FAf" secondAttribute="trailing" id="6ri-7g-2tG"/>
+                            <constraint firstItem="hY3-2x-PWw" firstAttribute="leading" secondItem="6yh-yU-FAf" secondAttribute="leading" id="A4g-f1-x3Y"/>
+                            <constraint firstItem="6yh-yU-FAf" firstAttribute="bottom" secondItem="hY3-2x-PWw" secondAttribute="bottom" constant="60" id="Giu-Eh-Mqc"/>
+                            <constraint firstItem="hlN-yu-6lh" firstAttribute="bottom" secondItem="6yh-yU-FAf" secondAttribute="bottom" id="Isu-88-qbe"/>
+                            <constraint firstItem="hY3-2x-PWw" firstAttribute="top" secondItem="GKL-lr-cjo" secondAttribute="top" id="JPe-cv-ooQ"/>
+                            <constraint firstItem="hlN-yu-6lh" firstAttribute="leading" secondItem="6yh-yU-FAf" secondAttribute="leading" id="mfj-rg-OmB"/>
+                            <constraint firstItem="hlN-yu-6lh" firstAttribute="trailing" secondItem="6yh-yU-FAf" secondAttribute="trailing" id="yHH-he-BnX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6yh-yU-FAf"/>
+                    </view>
+                    <connections>
+                        <outlet property="pdfView" destination="hY3-2x-PWw" id="zpv-Vo-lmC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oYD-ko-wca" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
